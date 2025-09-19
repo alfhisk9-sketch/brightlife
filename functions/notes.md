@@ -1,0 +1,1 @@
+AI proxy in `aiProxy.js`. Use `index.js` to start a local server for development. Replace with real Firebase Functions when deploying.

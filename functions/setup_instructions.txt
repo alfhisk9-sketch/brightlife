@@ -1,0 +1,4 @@
+1. cd functions
+2. npm install
+3. copy .env.example to .env and set HUGGINGFACE_API_KEY
+4. npm run start

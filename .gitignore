@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Logs
 logs
 *.log
@@ -137,3 +138,15 @@ dist
 # Vite logs files
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+=======
+/node_modules
+/client/node_modules
+/functions/node_modules
+/expo
+.expo
+.expo-shared
+.DS_Store
+.env
+client/.env
+functions/.env
+>>>>>>> f77b3cc (Initial commit)
