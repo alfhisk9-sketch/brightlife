@@ -24,10 +24,16 @@ jobs:
 
       - name: Install dependencies
         run: npm install
-        working-directory: ./client
 
       - name: Build APK with EAS
         env:
           EXPO_TOKEN: ${{ secrets.EXPO_TOKEN }}
         run: eas build -p android --profile preview --non-interactive
-        working-directory: ./client
+
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "you@example.com"
+          git config --local user.name "Your Name"
+          git add .github/workflows/main.yml
+          git commit -m "Update workflow file" || echo "No changes to commit"
+          git push
